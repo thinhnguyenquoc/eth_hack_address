@@ -1,0 +1,46 @@
+{
+    "name": "ibl-etc-utils",
+    "version": "0.1.0",
+    "description": "IBL etc utils library",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "author": "IBL",
+    "license": "MIT",
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-preset-env": "^1.6.0",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-react": "^6.24.1",
+        "mocha": "^4.0.0"
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "bip39": "^2.4.0",
+        "bitcoin-address": "^0.3.0",
+        "bitcoincashjs-lib": "https://github.com/phukq/bitcoincashjs-lib.git#335fb605ca0dcd942a00df0be1a1cf164d79bc88",
+        "bitcoinjs-lib": "^3.2.1",
+        "coinselect": "https://github.com/infinityblockchainlabs/coinselect.git",
+        "crypto-js": "^3.1.9-1",
+        "es6-promise": "^4.1.1",
+        "ethereumjs-abi": "^0.6.4",
+        "ethereumjs-tx": "^1.3.3",
+        "ethereumjs-util": "^5.1.2",
+        "ethereumjs-wallet": "^0.6.0",
+        "isomorphic-fetch": "^2.2.1",
+        "keythereum": "^1.0.2",
+        "read-last-lines": "^1.6.0",
+        "wallet-address-validator": "^0.1.1",
+        "web3": "^1.0.0-beta.33"
+    }
+}
