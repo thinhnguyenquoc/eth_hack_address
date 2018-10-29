@@ -55,6 +55,11 @@ var r = (i) =>{
 						}
 					});
 				}
+			},
+			(err)=>{
+				console.log(i);
+				i++;
+				r(i);
 			});
 		}
 		else if(i%5==1){
@@ -84,6 +89,11 @@ var r = (i) =>{
 						}
 					});
 				}
+			},
+			(err)=>{
+				console.log(i);
+				i++;
+				r(i);
 			});
 		}
 		else if(i%5==2){
@@ -113,6 +123,11 @@ var r = (i) =>{
 						}
 					});
 				}
+			},
+			(err)=>{
+				console.log(i);
+				i++;
+				r(i);
 			});
 		}
 		else if(i%5 == 3){
@@ -143,6 +158,11 @@ var r = (i) =>{
 					});
 				}
 			
+			},
+			(err)=>{
+				console.log(i);
+				i++;
+				r(i);
 			})
 		}
 		else{
@@ -150,30 +170,26 @@ var r = (i) =>{
 				console.log('etherscan',data.data.result);
 				if(parseFloat(data.data.result) != 0){
 					fs.appendFile('keys.txt', i + " " + JSON.stringify(addr) + "\n\t", function (err) {
-						if (err) {							
-							r(i);
-						}
-						else{
-							console.log(i);
-							i++;
-							r(i);
-							console.log('Saved ok!', addr);
-						}						
+						console.log(i);
+						i++;
+						r(i);
+						console.log('Saved ok!', addr);					
 					});
 				}
 				else{
 					fs.appendFile('keys.txt', i + "\n\t", function (err) {
-						if (err) 						
-							r(i);
-						else{
-							console.log(i);
-							i++;
-							r(i);
-						}
+						console.log(i);
+						i++;
+						r(i);
 					});
 				}
+			},
+			(err)=>{
+				console.log(i);
+				i++;
+				r(i);
 			});
 		}
-	}, 2000);
+	}, 3000);
 	
 }
